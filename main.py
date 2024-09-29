@@ -27,7 +27,7 @@ app.add_middleware(
 )
 
 # Initialize ChatBot (you might want to do this in a startup event)
-PDF_PATHS = ["docs\iesc111.pdf"]
+PDF_PATHS = os.getenv("PDF_FILE_PATH")
 postgres_db = PostgreSQLDatabase()
 chat_bot = ChatBot(PDF_PATHS, postgres_db)
 
