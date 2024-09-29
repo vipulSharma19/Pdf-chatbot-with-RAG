@@ -93,10 +93,6 @@ This project implements an advanced AI Chat Assistant capable of processing both
 
 Ensure that your microphone is properly configured and that you have the necessary permissions for audio recording.
 
-## License
-
-This project is licensed under the Apache License 2.0. See the LICENSE file for details.
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
