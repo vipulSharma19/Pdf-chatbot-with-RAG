@@ -30,7 +30,7 @@ load_dotenv()
 
 # Configuration
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-PDF_PATHS = "C:/Users/nirde/Downloads/Multi-PDF-Chatbot-using-Gemini-master/Multi-PDF-Chatbot-using-Gemini-master/docs/iesc111.pdf"
+PDF_PATHS = os.getenv("PDF_FILE_PATH")
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE"))
 CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP"))
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL")
@@ -357,7 +357,7 @@ class ResponseGenerator:
 def main():
     try:
         # Define PDF paths
-        PDF_PATHS = ["docs\iesc111.pdf"]
+        PDF_PATHS = os.getenv("PDF_FILE_PATH")
         
         # Create PostgreSQL database connection
         postgres_db = PostgreSQLDatabase()
